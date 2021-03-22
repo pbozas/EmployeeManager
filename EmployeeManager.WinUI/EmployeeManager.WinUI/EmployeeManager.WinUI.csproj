@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows10.0.18362.0</TargetFramework>
@@ -19,6 +19,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.WinUI" Version="3.0.0-preview4.210210.4" />
     <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\EmployeeManager.Common\EmployeeManager.Common.csproj" />
+    <ProjectReference Include="..\..\EmployeeManager.DataAccess\EmployeeManager.DataAccess.csproj" />
+    <ProjectReference Include="..\..\EmployeeManager.ViewModel\EmployeeManager.ViewModel.csproj" />
   </ItemGroup>
 
   <ItemGroup>
